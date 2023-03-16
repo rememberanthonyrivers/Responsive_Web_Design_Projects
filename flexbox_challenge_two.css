@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+img {
+    /* the next line of code ensures that your image 
+    integrity will always stay the same on any 
+    screen */
+    max-width: 100%;
+}
+/* below sets the background and text color */
+.box {
+    padding: 60px 0;
+    background-color: #23424A;
+    color: white;
+}
+/* below sets all of the content in the middle */
+.container {
+    /* the below two lines go hand in hand */
+    display: flex;
+    justify-content: space-between;
+    /* the top line only works if the parent containers
+     elements are less that 100%... 50% + 50%.... 
+     75% + 25% */
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+/* # the __ pertains to the overall 
+text of the parent container  */
+.box__text {
+    width: 60%;
+    /* margin-right: 10%; */
+}
+.box_img {
+    width: 30%;
+    height: 250px;
+    /* border: 2px solid red; */
+}
+.container p {
+    margin-bottom: 3em;
+    
+}
+/* below is the styling for a simple 
+anchor tag repreented as a button */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    background-color: #38cfd9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+/* below lies the css for the main body section */
+.box_two{
+    padding: 2rem 0;
+    background-color: #fff;
+}
+.container_two{
+    display: flex;
+    padding-top:25px;
+
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.box_two_text{
+    width: 60%;
+    padding: 2rem;
+}
+.box_two_text h2 {
+    color: #136C72;
+    font-size: 2rem;
+}
+.box_two_text p {
+    color: black;
+}
+.box_two_col{
+    text-align: center;
+    width: 40%;
+    padding: 2rem;
+    color: white;
+    background-color: #136C72;
+}
+.col2,
+.col3{
+    padding-top: 2rem;
+}
+.col3{
+    padding-bottom: 3rem;
+}
