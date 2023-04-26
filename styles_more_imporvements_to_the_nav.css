@@ -1,38 +1,29 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
 }
-
 h1 {
     font-size: 3rem;
     margin-top: 0;
 }
-
 img {
     /* the next line of code ensures that your image 
     integrity will always stay the same on any 
     screen */
     max-width: 100%;
 }
-
 /* nav css below */
 header {
     background: #136c72;
     padding: 1.2rem;
+    
 }
 /* below sets all of the content in the middle */
-.container {
-    /* the below two lines go hand in hand */
-    display: flex;
-    justify-content: space-between;
-    /* the top line only works if the parent containers
-     elements are less that 100%... 50% + 50%.... 
-     75% + 25% */
+.container{
     width: 80%;
     margin: 0 auto;
     max-width: 1100px;
@@ -41,21 +32,20 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 .nav{
     display: flex;
+    
 }
-.nav__list {
-    display: flex;
-
+.nav__list{
     margin: 0;
     padding: 0;
     list-style: none;
+
     align-items: center;
-
-    gap: 1rem;
-
     font-size: .9rem;
+
+    display: flex;
+
 }
 .nav__link {
     color: #fff;
@@ -73,7 +63,9 @@ header {
 .nav__link:hover {
     opacity: 0.75;
 }
-
+.nav__item +.nav__item {
+    margin-left: 1em;
+}
 /* below sets the background and text color */
 .box {
     padding: 60px 0;
