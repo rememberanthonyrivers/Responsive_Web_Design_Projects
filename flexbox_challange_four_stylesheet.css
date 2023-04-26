@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 1.3rem; */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+main {
+    background-color: #F3EED9;
+    padding: 6.5rem;
+    text-align: center;
+}
+
+#banner {
+    color: #824936;
+    font-size: 3.5em;
+}
+.txt_white{
+    color: #fff;
+}
+.mw{
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.hero_section--one {
+    background-color: #fff;
+    padding: 6rem;
+    /* margin: 0 auto; */
+}
+
+.hero_section--two {
+    background-color: #222C2A;
+    padding: 6rem;
+    /* margin: 0 auto; */
+}
+
+.hero_section--three {
+    background-color: #824936;
+    padding: 6rem;
+    /* margin: 0 auto; */
+}
