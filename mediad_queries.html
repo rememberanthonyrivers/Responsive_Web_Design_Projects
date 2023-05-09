@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries Examples </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        .example{
+            width: 90%;
+            margin: 5em auto;
+            padding: 10em 0;
+        }
+        /* 600px or bigger we will see blue */
+        @media (min-width: 600px) {
+            .example{
+                background-color: blue;
+            }
+        }
+        /* 600px or smaller then we will see red */
+        @media (max-width: 600px) {
+            .example{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="example"></div>
+</body>
+</html>
