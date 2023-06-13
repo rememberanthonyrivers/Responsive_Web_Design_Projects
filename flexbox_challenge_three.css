@@ -25,6 +25,7 @@ header {
     background: #136c72;
     padding: 1.2rem;
 }
+
 /* below sets all of the content in the middle */
 .container {
     /* the below two lines go hand in hand */
@@ -37,14 +38,17 @@ header {
     margin: 0 auto;
     max-width: 1100px;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
 }
 
-.nav{
+.nav {
     display: flex;
+    gap: 1rem;
 }
+
 .nav__list {
     display: flex;
 
@@ -57,6 +61,7 @@ header {
 
     font-size: .9rem;
 }
+
 .nav__link {
     color: #fff;
     text-decoration: none;
@@ -165,3 +170,8 @@ anchor tag repreented as a button */
     padding-bottom: 3rem;
 }
 
+@media (max-width: 600px) {
+    .row {
+        display: block;
+    }
+}
